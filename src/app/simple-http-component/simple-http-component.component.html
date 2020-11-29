@@ -1,0 +1,10 @@
+<h2>Basic Request</h2>
+<button type="button"  class="btn btn-primary" (click)="makeRequest()">
+    Make Request
+</button>
+<div *ngIf="loading">
+    loading...
+</div>
+<pre>
+    {{data | json}}
+</pre>
